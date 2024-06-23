@@ -1,7 +1,30 @@
 # AURA
 
 AURA is a web application that allows users to connect and share with people. It is built using React js and provides a rich user experience.
+## Walkthrough
+### Create Post
 
+![Edit Page](/public/steve.png)
+### Landing Page
+
+![Landing Page](/public/landing.png)
+
+### Sign-In Page
+
+![Sign-In Page](/public/signin.png)
+
+### Home Page
+
+![Home Page](/public/home.png)
+
+### Edit Page
+
+![Edit Page](/public/albert.png)
+
+### Add Post Page
+
+![Add Post Page](/public/post1.png)
+![Add Post Page](/public/post2.png)
 ## Table of Contents
 
 - [Features](#features)
@@ -9,7 +32,7 @@ AURA is a web application that allows users to connect and share with people. It
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -84,7 +107,5 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
