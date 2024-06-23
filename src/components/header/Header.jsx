@@ -36,17 +36,19 @@ const Header = () => {
     ]
     return (
         <>
-            <header className="header mt-2">
+            <header className="header mt-2 mb-4">
+            
                 <Container>
                     <div className="header__wrapper">
-                        {/*<Link to='/'><Logo /></Link>*/}
+                        
                         <nav className="flex">
+                        <Link to='/'><Logo /></Link>
                             <ul className="flex ml-auto">
                                 {navItems.map((item) => (
                                     (item.active) ?
                                         (
                                             <li key={item.name} className="header__nav-item">
-                                                <Button className="inline-bock px-6 py-2 " onClick={() => navigate(item.slug)} variant="oulined">{item.name}</Button>
+                                                <Button className="inline-bock px-6 py-2 border-2 border-cyan-200" onClick={() => navigate(item.slug)} variant="oulined">{item.name}</Button>
                                             </li>
                                         )
                                         : null

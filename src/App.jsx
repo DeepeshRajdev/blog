@@ -35,7 +35,7 @@ function App() {
   ) : (
     <>
       <Header />
-      <Outlet />
+      <Outlet/>
       {/* <Footer /> */}
 
     </>

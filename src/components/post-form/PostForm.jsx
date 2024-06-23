@@ -93,18 +93,18 @@ const PostForm = ({ post }) => {
     }, [slugTransform, watch, setValue])
     return (
         <>
-            <form onSubmit={handleSubmit(submit)} className="flex flex-wrap bg-cyan-200 p-2 rounded-xl">
-                <div className="w-2/3 px-2">
+            <form onSubmit={handleSubmit(submit)} className="flex flex-wrap bg-violet-200 p-2 rounded-xl">
+                <div className="px-2 w-full sm:w-2/3">
                     <Input
                         label="Title :"
                         placeholder="Title"
-                        className="text-violet-900  outline-violet-900 bg-cyan-100 m-4 rounded-xl  px-2"
+                        className="text-violet-900  outline-violet-900 bg-violet-100 m-4 rounded-xl  px-2"
                         {...register("title", { required: true })}
                     />
                     <Input
                         label="Slug :"
                         placeholder="Slug"
-                        className="text-violet-900  outline-violet-900 bg-cyan-100 m-4 rounded-xl  px-2"
+                        className="text-violet-900  outline-violet-900 bg-violet-100 m-4 rounded-xl  px-2"
                         {...register("slug", { required: true })}
                         onInput={(e) => {
                             setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
@@ -135,11 +135,11 @@ const PostForm = ({ post }) => {
                         <Select
                             options={["active", "inactive"]}
                             label="Status"
-                            className="text-violet-900  outline-violet-900 bg-cyan-100 m-4 rounded-xl  px-2"
+                            className="text-violet-900  outline-violet-900 bg-violet-100 m-4 rounded-xl  px-2"
                             {...register("status", { required: true })}
                         />
                     </div>
-                    <button className="m-4 p-4 text-violet-900 border-violet-900 border" type="submit">
+                    <button className="m-4 px-4 py-2 text-violet-900 border-violet-900 border" type="submit">
                         {post ? "Update" : "Submit"}
                     </button>
                 </div>

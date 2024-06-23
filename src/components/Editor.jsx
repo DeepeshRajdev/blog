@@ -6,13 +6,14 @@ import { Controller } from 'react-hook-form';
 export default function MyEditor({ name, control, label, defaultValue = "" }) {
     return (
         <div className='w-full'>
-            {label && <label className='inline-block mb-1 pl-1'>{label}</label>}
+            {label && <label className='inline-block mb-1 pl-1 text-stone-900'>{label}</label>}
 
             <Controller
                 name={name || "content"}
                 control={control}
                 render={({ field: { onChange } }) => (
                     <Editor
+                        apiKey='0kv9a93eeqndj7dyqwq2r897tordduxped0ncc0b8hyszoak'
                         initialValue={defaultValue}
                         init={{
                             initialValue: defaultValue,
